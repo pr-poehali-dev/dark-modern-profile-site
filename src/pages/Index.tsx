@@ -139,34 +139,29 @@ const Index = () => {
               href={discordLink || '#'} 
               target={discordLink ? '_blank' : '_self'}
               rel="noopener noreferrer"
-              className="flex items-center space-x-4"
+              className="block"
             >
-              <div className="h-14 w-14 rounded-full bg-gradient-to-br from-[#5865F2] to-[#7289DA] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <Icon name="MessageSquare" size={28} className="text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-semibold text-lg flex items-center gap-2">
-                  Discord
-                  <Icon name="ExternalLink" size={16} className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-                </h3>
-                {isEditing ? (
-                  <Input 
-                    value={discordLink}
-                    onChange={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      setDiscordLink(e.target.value);
-                    }}
-                    onClick={(e) => e.preventDefault()}
-                    placeholder="discord.gg/..."
-                    className="mt-1 bg-background/50 border-border/50 h-8 text-sm"
-                  />
-                ) : (
-                  <p className="text-sm text-muted-foreground">
-                    {discordLink || 'Добавить ссылку'}
-                  </p>
-                )}
-              </div>
+              <h3 className="font-semibold text-lg flex items-center gap-2 mb-2">
+                Discord
+                <Icon name="ExternalLink" size={16} className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+              </h3>
+              {isEditing ? (
+                <Input 
+                  value={discordLink}
+                  onChange={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setDiscordLink(e.target.value);
+                  }}
+                  onClick={(e) => e.preventDefault()}
+                  placeholder="discord.com/users/..."
+                  className="bg-background/50 border-border/50 h-8 text-sm"
+                />
+              ) : (
+                <p className="text-sm text-muted-foreground">
+                  {discordLink || 'Добавить ссылку'}
+                </p>
+              )}
             </a>
           </Card>
         </div>
