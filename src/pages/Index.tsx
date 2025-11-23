@@ -167,9 +167,6 @@ const Index = () => {
           </Card>
         </div>
 
-        <div className="text-center text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <p>✨ Создано с помощью poehali.dev</p>
-        </div>
       </div>
     </div>
   );
