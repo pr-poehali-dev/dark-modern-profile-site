@@ -9,7 +9,7 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   const [nickname, setNickname] = useState('droKOH4IK');
   const [avatarUrl, setAvatarUrl] = useState('https://cdn.poehali.dev/files/00097d27-ebe3-4bd1-b883-bade9f5eca15.jpg');
-  const [telegramLink, setTelegramLink] = useState('');
+  const [telegramLink, setTelegramLink] = useState('https://t.me/droKOH4IK2');
   const [discordLink, setDiscordLink] = useState('');
   const [isEditing, setIsEditing] = useState(false);
 
