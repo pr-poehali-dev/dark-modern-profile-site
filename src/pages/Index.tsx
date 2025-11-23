@@ -27,7 +27,7 @@ const Index = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-full opacity-75 blur-lg group-hover:opacity-100 transition duration-500 animate-pulse"></div>
               <Avatar className="relative h-32 w-32 border-4 border-primary/50">
-                <AvatarImage src={avatarUrl} alt={nickname} />
+                <AvatarImage src={avatarUrl} alt={nickname} className="object-cover" />
                 <AvatarFallback className="bg-gradient-to-br from-primary to-accent text-3xl font-bold">
                   {nickname.charAt(0).toUpperCase()}
                 </AvatarFallback>
