@@ -141,9 +141,9 @@ const Index = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-4"
             >
-              <div className="h-14 w-14 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300 border-2 border-[#5865F2]">
+              <div className="h-14 w-14 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300 border-2 border-[#5865F2] bg-[#5865F2]">
                 <img 
-                  src="https://cdn.poehali.dev/files/00097d27-ebe3-4bd1-b883-bade9f5eca15.jpg"
+                  src="https://cdn4.telesco.pe/file/S5T32Z79f-eeIQsSm512o7E9ozVOxBDOFuSJX_3xdmjtv7mw2WWao28mP1MzEN8bqSsp1fvwGidKyPnpglrjFlwZNN2pc9WQO_KugwZDpJkm0hEEmmOXN6a_qc-m808P_GBMV5MKGOaBFE5MkTJ3kkkmciqz_BVovElmTDTEymFFQDEOpIjrUtGq-8LR1V2RhtGxM89qxXqX56kSt3Ma8RNH0WujJUfeYWzhNbSDN6yUKc-9ZBGFFginx1S8Z56ZB2iZWp1mP6dTCiuTmLD3llcKFvwh2ASspKutrcPtI3jIxrAqs5zJn1NRH38roYEfuXEsK6PQi-TmV1lGgokZHw.jpg"
                   alt="Discord Avatar"
                   className="w-full h-full object-cover"
                 />
