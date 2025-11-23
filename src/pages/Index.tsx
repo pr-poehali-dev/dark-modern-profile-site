@@ -10,7 +10,7 @@ const Index = () => {
   const [nickname, setNickname] = useState('droKOH4IK');
   const [avatarUrl, setAvatarUrl] = useState('https://cdn.poehali.dev/files/00097d27-ebe3-4bd1-b883-bade9f5eca15.jpg');
   const [telegramLink, setTelegramLink] = useState('https://t.me/droKOH4IK2');
-  const [discordLink, setDiscordLink] = useState('');
+  const [discordLink, setDiscordLink] = useState('https://discord.com/users/drokoh4ik');
   const [isEditing, setIsEditing] = useState(false);
 
   const handleSave = () => {
@@ -141,8 +141,12 @@ const Index = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-4"
             >
-              <div className="h-14 w-14 rounded-full bg-gradient-to-br from-[#5865F2] to-[#7289DA] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <Icon name="MessageSquare" size={28} className="text-white" />
+              <div className="h-14 w-14 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300 border-2 border-[#5865F2]">
+                <img 
+                  src="https://cdn.poehali.dev/files/00097d27-ebe3-4bd1-b883-bade9f5eca15.jpg"
+                  alt="Discord Avatar"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold text-lg flex items-center gap-2">
